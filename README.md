@@ -1,0 +1,2 @@
+# azuredep
+Mytemplate
