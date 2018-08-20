@@ -1,0 +1,31 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "type": "string"
+        },
+      "nsgs": {
+        "type": "string",
+        "defaultValue": "network security group",
+        "metadata": {
+          "description": "nsg"
+        }
+      }
+    },
+    "variables": {
+
+        },
+        "resources": [
+        {
+      "apiVersion": "2015-06-15",
+      "type": "Microsoft.Network/networkSecurityGroups",
+      "name": "[variables('nsgs')]",
+      "location": "[parameters('location')]",
+      "properties": {
+        "securityRules": [
+        ]
+      }
+        }
+]
+}
