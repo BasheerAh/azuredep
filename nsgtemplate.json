@@ -20,7 +20,7 @@
         {
       "apiVersion": "2015-06-15",
       "type": "Microsoft.Network/networkSecurityGroups",
-      "name": "[variables('nsgs')]",
+      "name": "[parameters('nsgs')]",
       "location": "[parameters('location')]",
       "properties": {
         "securityRules": [
